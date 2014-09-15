@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+
+    <title>
+      {% if page.title %}
+        {{page.title}}
+      {% else %}
+        {{site.title}}
+      {% endif %}
+    </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/assets/stylesheets/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/stylesheets/highlight.css" | prepend: site.baseurl }}">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54801029-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body>
+    <!-- Body -->
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title title">
+          <a class="blog-nav-item active" href="{{"/" | prepend: site.baseurl}}">{{site.title}}</a>
+
+          <a class="blog-nav-item" href="{{"/feed.xml" | prepend: site.baseurl}}" title="Feed Rss">
+            <span class="fa fa-rss rss"></span>
+          </a>
+        </h1>
+        <p class="lead blog-description">{{site.description}}</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          {{content}}
+        </div>
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <!-- About -->
+          <div class="sidebar-module sidebar-module-inset">
+            <div class="gravatar">
+              <img src="http://www.gravatar.com/avatar/0668896bc3cfab544a6dd739e36cc696?s=100" />
+            </div>
+
+            <p>
+              Olá, eu sou o <em>Mateus Lorandi dos Santos</em>, também conhecido
+              por <em>CoMoGo</em>.
+            </p>
+
+            <p>
+              Me considero um desenvolvedor entusiasmado e apaixonado por desenvolvimento de
+              software, seguidor de boas práticas como <em>TDD</em>, <em>Refactoring</em> e <em>Pair
+              Programming</em>. Autodidata e pró-ativo, sempre em busca de novos
+              conhecimentos e desafios, prezando sempre pela qualidade e
+              legibilidade do código.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="sidebar-module">
+            <h4>Links</h4>
+
+            <ol class="list-unstyled">
+              <li>
+                <a href="https://github.com/comogo">
+                  <span class="fa fa-github"></span>
+                  Github
+                </a>
+              </li>
+              <li>
+                <a href="https://bitbucket.org/comogo">
+                  <span class="fa fa-bitbucket"></span>
+                  Bitbucket
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/comogo">
+                  <span class="fa fa-twitter"></span>
+                  Twitter
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="blog-footer">
+      <p>
+        <a href="{{"/" | prepend: site.baseurl}}">Home</a> |
+        <a href="{{"/feed.xml" | prepend: site.baseurl}}">Subscribe</a>
+      </p>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="{{ "/assets/javascripts/disqus.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/javascripts/main.js" | prepend: site.baseurl }}"></script>
+  </body>
+</html>

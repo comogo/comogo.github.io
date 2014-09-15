@@ -1,0 +1,12 @@
+title: Comogo's Blog
+email: mcomogo@gmail.com
+
+description: >
+  Blog sobre tecnologia
+
+exclude: ['Gemfile', 'Gemfile.lock']
+timezone: 'America/Sao_Paulo'
+encoding: 'utf-8'
+markdown: redcarpet
+permalink: pretty
+paginate: 3
