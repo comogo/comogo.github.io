@@ -130,6 +130,9 @@ h6, .h6 {
 }
 .gravatar img {
   float: right;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .rss {
   color: #DD9E4F;
@@ -140,4 +143,7 @@ h6, .h6 {
 .title a:hover {
   text-decoration: none;
   color: #000;
+}
+.about p {
+  text-align: justify;
 }
