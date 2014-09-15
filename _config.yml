@@ -5,8 +5,21 @@ description: >
   Blog sobre tecnologia
 
 exclude: ['Gemfile', 'Gemfile.lock']
-timezone: 'America/Sao_Paulo'
-encoding: 'utf-8'
+timezone: America/Sao_Paulo
+encoding: utf-8
 markdown: redcarpet
 permalink: pretty
 paginate: 3
+
+redcarpet:
+  extensnions: ['no_intra_emphasis', 'tables', 'autolink', 'fenced_code_blocks']
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      author: "comogo"
+      published: false
