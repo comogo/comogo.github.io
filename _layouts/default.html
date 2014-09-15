@@ -37,9 +37,9 @@
     <div class="container">
       <div class="blog-header">
         <h1 class="blog-title title">
-          <a class="blog-nav-item active" href="{{"/" | prepend: site.baseurl}}">{{site.title}}</a>
+          <a class="blog-nav-item active" href="{{"/" | prepend: site.baseurl}}" title="Home">{{site.title}}</a>
 
-          <a class="blog-nav-item" href="{{"/feed.xml" | prepend: site.baseurl}}" title="Feed Rss">
+          <a class="blog-nav-item" href="{{"/feed.xml" | prepend: site.baseurl}}" title="Inscreva-se">
             <span class="fa fa-rss rss"></span>
           </a>
         </h1>
@@ -104,14 +104,13 @@
     <!-- Footer -->
     <div class="blog-footer">
       <p>
-        <a href="{{"/" | prepend: site.baseurl}}">Home</a> |
-        <a href="{{"/feed.xml" | prepend: site.baseurl}}">Subscribe</a>
+        <a href="{{"/" | prepend: site.baseurl}}" title="Home">Home</a> |
+        <a href="{{"/feed.xml" | prepend: site.baseurl}}" title="Inscreva-se">Inscreva-se</a>
       </p>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="{{ "/assets/javascripts/disqus.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/assets/javascripts/main.js" | prepend: site.baseurl }}"></script>
   </body>
 </html>
