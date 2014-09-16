@@ -1,8 +1,8 @@
 title: Comogo's Blog
 email: mcomogo@gmail.com
+author: Mateus Lorandi dos Santos
 
-description: >
-  Blog sobre tecnologia
+description: Blog sobre tecnologia
 
 exclude: ['Gemfile', 'Gemfile.lock']
 timezone: America/Sao_Paulo
